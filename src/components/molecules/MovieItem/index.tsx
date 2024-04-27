@@ -1,14 +1,15 @@
-import React from "react";
-import { ImageBackground, Text, View } from "react-native";
-import { MovieItemProps } from "./types";
-import styles from "./styles";
-import { GenresContainer } from "..";
 import { useMovie } from "hooks/useMovie";
+import React from "react";
+import { Text, View } from "react-native";
+import FastImage from "react-native-fast-image";
+import { GenresContainer } from "..";
+import styles from "./styles";
+import { MovieItemProps } from "./types";
 
 const MovieItem = ({ item }: MovieItemProps) => {
   const { getMoviePoster } = useMovie();
   return (
-    <ImageBackground
+    <FastImage
       source={{ uri: getMoviePoster(item.poster_path) }}
       style={styles.image}
       resizeMode="contain"
@@ -24,7 +25,7 @@ const MovieItem = ({ item }: MovieItemProps) => {
         </View>
         <GenresContainer genres={["Action,Romance,Romance"]} />
       </View>
-    </ImageBackground>
+    </FastImage>
   );
 };
 

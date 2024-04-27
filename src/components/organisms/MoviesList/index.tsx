@@ -11,7 +11,7 @@ const MoviesList = () => {
       style={styles.container}
       contentContainerStyle={styles.content}
       numColumns={2}
-      renderItem={({ item }) => <MovieItem item={item} />}
+      renderItem={({ item }) => <MovieItem key={item.id} item={item} />}
     />
   );
 };

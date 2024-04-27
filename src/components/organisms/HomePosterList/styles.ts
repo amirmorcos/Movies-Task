@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { vs } from "react-native-size-matters";
+import { moderateScale, vs } from "react-native-size-matters";
 
 export default StyleSheet.create({
   list: {
@@ -8,6 +8,6 @@ export default StyleSheet.create({
   recommendedText: {
     color: "white",
     fontWeight: "bold",
-    fontSize: 17,
+    fontSize: moderateScale(17),
   },
 });

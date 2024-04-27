@@ -4,10 +4,10 @@ import { s, vs, moderateScale } from "react-native-size-matters";
 export default StyleSheet.create({
   image: {
     width: s(160),
-    height: vs(250),
-    marginEnd: s(5),
-    marginBottom: vs(10),
-    borderRadius: 8,
+    height: s(250),
+    marginEnd: s(8),
+    marginBottom: vs(5),
+    borderRadius: s(8),
     overflow: "hidden",
     justifyContent: "flex-end",
     alignItems: "center",
@@ -23,7 +23,7 @@ export default StyleSheet.create({
   },
   infoContainer: {
     flexDirection: "row",
-    marginBottom: vs(5),
+    marginBottom: vs(10),
   },
   dateContainer: {
     backgroundColor: "white",
