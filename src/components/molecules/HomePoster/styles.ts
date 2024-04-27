@@ -6,7 +6,7 @@ export default StyleSheet.create({
     width: s(135),
     height: vs(210),
     overflow: "hidden",
-    borderRadius: 5,
+    borderRadius: 10,
   },
   image: {
     flex: 1,

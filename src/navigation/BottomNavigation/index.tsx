@@ -1,33 +1,25 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { useBottomBarOptions } from "hooks/useBottomBarOptions";
 import { HomeScreen, SeeAllScreen } from "screens/index";
+import { RootStackParamList } from "./types";
+
+const BottomTab = createBottomTabNavigator<RootStackParamList>();
 
 const BottomNavigation = () => {
-  const BottomTab = createBottomTabNavigator();
+  const { bottombarStyle, homeScreenStyle, moviesScreenStyle } =
+    useBottomBarOptions();
+
   return (
-    <BottomTab.Navigator>
+    <BottomTab.Navigator screenOptions={bottombarStyle}>
       <BottomTab.Screen
         name="Home"
         component={HomeScreen}
-        options={{
-          headerShown: false,
-        }}
+        options={homeScreenStyle}
       />
       <BottomTab.Screen
-        name="See All"
+        name="SeeAll"
         component={SeeAllScreen}
-        options={{
-          headerTitle: "MOVIES",
-          headerTitleStyle: {
-            color: "white",
-            fontWeight: "bold",
-            fontSize: 20,
-          },
-          headerStyle: {
-            backgroundColor: "black",
-            shadowOpacity: 0,
-            elevation: 0,
-          },
-        }}
+        options={moviesScreenStyle}
       />
     </BottomTab.Navigator>
   );
