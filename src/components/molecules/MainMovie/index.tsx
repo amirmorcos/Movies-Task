@@ -1,17 +1,19 @@
 import { useMovie } from "hooks/useMovie";
 import React from "react";
-import { ImageBackground, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import styles from "./styles";
 import { MainMovieProps } from "./types";
+import FastImage from "react-native-fast-image";
 
 const MainMovie = ({ movie }: MainMovieProps) => {
   const { getMoviePoster } = useMovie();
   return (
-    <ImageBackground
+    <FastImage
       source={{
         uri: getMoviePoster(movie.poster_path),
       }}
       style={styles.imageBg}
+      resizeMode="stretch"
     >
       <View style={styles.infoContainer}>
         <Text style={styles.info}>
@@ -20,7 +22,7 @@ const MainMovie = ({ movie }: MainMovieProps) => {
         <Text style={styles.info}>•</Text>
         <Text style={styles.info}>Action, Romance</Text>
       </View>
-    </ImageBackground>
+    </FastImage>
   );
 };
 

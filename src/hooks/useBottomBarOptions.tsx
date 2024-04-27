@@ -1,4 +1,5 @@
 import { BottomTabNavigationOptions } from "@react-navigation/bottom-tabs";
+import { moderateScale } from "react-native-size-matters";
 import FontAwesomeIcon from "react-native-vector-icons/FontAwesome";
 
 export const useBottomBarOptions = () => {
@@ -7,7 +8,7 @@ export const useBottomBarOptions = () => {
     icon: string
   ) => BottomTabNavigationOptions = (title, icon) => {
     return {
-      headerTitle: title,
+      title,
       tabBarIcon: ({ size, color }) => (
         <FontAwesomeIcon name={icon} size={size} color={color} />
       ),
@@ -24,7 +25,7 @@ export const useBottomBarOptions = () => {
     headerShown: false,
     ...getScreenConfig("Home", "star"),
     tabBarLabelStyle: {
-      fontSize: 12,
+      fontSize: moderateScale(12),
     },
   };
 
@@ -33,7 +34,7 @@ export const useBottomBarOptions = () => {
     headerTitleStyle: {
       color: "white",
       fontWeight: "bold",
-      fontSize: 20,
+      fontSize: moderateScale(20),
     },
     headerStyle: {
       backgroundColor: "black",
