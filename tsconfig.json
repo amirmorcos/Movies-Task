@@ -10,9 +10,10 @@
       "screens/*": ["src/screens/*"],
       "utlis/*": ["src/utils/*"],
       "models/*": ["src/models/*"],
-      "store/*": ["./src/store/*"],
-      "api/*": ["./src/api/*"],
-      "themes/*": ["./src/themes/*"]
+      "store/*": ["src/store/*"],
+      "api/*": ["src/api/*"],
+      "themes/*": ["src/themes/*"],
+      "utils/*": ["src/utils/*"]
     }
   }
 }
