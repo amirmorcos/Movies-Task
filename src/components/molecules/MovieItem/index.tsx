@@ -7,7 +7,7 @@ import styles from "./styles";
 import { MovieItemProps } from "./types";
 
 const MovieItem = ({ item }: MovieItemProps) => {
-  const { getMoviePoster } = useMovie();
+  const { getMoviePoster, getMovieGenre } = useMovie();
   return (
     <FastImage
       source={{ uri: getMoviePoster(item.poster_path) }}
@@ -23,7 +23,7 @@ const MovieItem = ({ item }: MovieItemProps) => {
             {new Date(item.release_date).getFullYear()}
           </Text>
         </View>
-        <GenresContainer genres={["Action,Romance,Romance"]} />
+        <GenresContainer genres={getMovieGenre(item.genre_ids)!} />
       </View>
     </FastImage>
   );
