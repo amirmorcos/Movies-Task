@@ -3,14 +3,10 @@ import { s, vs } from "react-native-size-matters";
 
 export default StyleSheet.create({
   container: {
-    width: s(135),
-    height: vs(210),
-    overflow: "hidden",
-    borderRadius: 5,
+    backgroundColor: "black",
+    padding: s(15),
   },
-  image: {
-    flex: 1,
-    width: undefined,
-    height: undefined,
+  content: {
+    paddingBottom: vs(30),
   },
 });
