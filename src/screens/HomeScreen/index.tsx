@@ -1,20 +1,15 @@
 import HomePosterList from "organisms/HomePosterList";
 import React from "react";
-import { ImageBackground, View } from "react-native";
+import { View } from "react-native";
 import { dummyData } from "../../../dummy-data";
 import styles from "./styles";
-import { getPosterImage } from "../../utils/constants";
+import MainMovie from "molecules/MainMovie";
 
 const HomeScreen = () => {
-  const firstMovie = dummyData.results[0];
+  const mainMovie = dummyData.results[0];
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={{
-          uri: getPosterImage(firstMovie.poster_path),
-        }}
-        style={styles.imageBg}
-      />
+      <MainMovie movie={mainMovie} />
       <HomePosterList
         data={dummyData.results}
         overrideContainerStyle={styles.listContainer}

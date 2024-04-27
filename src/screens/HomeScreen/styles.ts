@@ -9,11 +9,4 @@ export default StyleSheet.create({
   listContainer: {
     padding: s(15),
   },
-  imageBg: {
-    flex: 1,
-    width: undefined,
-    height: undefined,
-    opacity: 0.8,
-    justifyContent: "flex-end",
-  },
 });

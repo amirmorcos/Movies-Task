@@ -1,14 +1,15 @@
 import React from "react";
 import { ImageBackground, Text, View } from "react-native";
-import { getPosterImage } from "../../../utils/constants";
 import { MovieItemProps } from "./types";
 import styles from "./styles";
 import { GenresContainer } from "..";
+import { useMovie } from "hooks/useMovie";
 
 const MovieItem = ({ item }: MovieItemProps) => {
+  const { getMoviePoster } = useMovie();
   return (
     <ImageBackground
-      source={{ uri: getPosterImage(item.poster_path) }}
+      source={{ uri: getMoviePoster(item.poster_path) }}
       style={styles.image}
       resizeMode="contain"
     >
