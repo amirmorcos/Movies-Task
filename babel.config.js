@@ -16,6 +16,7 @@ module.exports = {
           api: "./src/api",
           themes: "./src/themes",
           utils: "./src/utils",
+          hooks: "./src/hooks",
         },
       },
     ],
