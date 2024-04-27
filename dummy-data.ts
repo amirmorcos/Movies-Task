@@ -1,4 +1,11 @@
-export const dummyData = {
+import { Poster } from "models/Poster";
+
+export const dummyData: {
+  page: number;
+  results: Poster[];
+  total_pages: number;
+  total_results: number;
+} = {
   page: 1,
   results: [
     {
