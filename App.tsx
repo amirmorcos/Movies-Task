@@ -6,14 +6,19 @@
  */
 
 import { NavigationContainer } from "@react-navigation/native";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import BottomNavigation from "navigation/BottomNavigation";
 import React from "react";
 
+const queryClient = new QueryClient();
+
 function App(): React.JSX.Element {
   return (
-    <NavigationContainer>
-      <BottomNavigation />
-    </NavigationContainer>
+    <QueryClientProvider client={queryClient}>
+      <NavigationContainer>
+        <BottomNavigation />
+      </NavigationContainer>
+    </QueryClientProvider>
   );
 }
 

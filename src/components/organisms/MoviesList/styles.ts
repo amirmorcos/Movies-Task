@@ -7,6 +7,13 @@ export default StyleSheet.create({
     padding: s(15),
   },
   content: {
+    flexGrow: 1,
     paddingBottom: vs(30),
+  },
+  loadMoreContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    marginVertical: vs(5),
   },
 });

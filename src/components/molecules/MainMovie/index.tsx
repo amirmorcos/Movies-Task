@@ -6,7 +6,7 @@ import { MainMovieProps } from "./types";
 import FastImage from "react-native-fast-image";
 
 const MainMovie = ({ movie }: MainMovieProps) => {
-  const { getMoviePoster } = useMovie();
+  const { getMoviePoster, getMovieGenre } = useMovie();
   return (
     <FastImage
       source={{
@@ -20,7 +20,7 @@ const MainMovie = ({ movie }: MainMovieProps) => {
           {new Date(movie.release_date).getFullYear()}
         </Text>
         <Text style={styles.info}>•</Text>
-        <Text style={styles.info}>Action, Romance</Text>
+        <Text style={styles.info}>{getMovieGenre(movie.genre_ids)}</Text>
       </View>
     </FastImage>
   );

@@ -10,7 +10,7 @@ const GenresContainer = ({
   return (
     <View style={[styles.container, overrideContainerStyle]}>
       <Text numberOfLines={1} ellipsizeMode="tail" style={styles.genre}>
-        {genres.map((item) => item)}
+        {genres}
       </Text>
     </View>
   );

@@ -1,5 +1,5 @@
-import { Poster } from "models/Poster";
+import { Movie } from "models/Movie";
 
 export type MainMovieProps = {
-  movie: Poster;
+  movie: Movie;
 };
