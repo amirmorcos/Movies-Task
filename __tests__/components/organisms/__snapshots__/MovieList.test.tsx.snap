@@ -1,0 +1,303 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTScrollView
+  ListFooterComponent={[Function]}
+  contentContainerStyle={
+    {
+      "flexGrow": 1,
+      "paddingBottom": undefined,
+    }
+  }
+  data={
+    [
+      {
+        "adult": false,
+        "backdrop_path": "/dcnSWFCtk4b2aIzkhq6IDbzoIf1.jpg",
+        "genre_ids": [
+          28,
+          35,
+        ],
+        "id": 942047,
+        "original_language": "en",
+        "original_title": "Outsource",
+        "overview": "A police chief hires an old friend, who is an international spy, to help him search for a wanted suspect in the Philippines. When the chief dies, all evidence points towards the spy, and he must go to extremes to defend himself.",
+        "popularity": 534.58,
+        "poster_path": "/zIAF0UXtCJTJOYNYWiBfyifaaOi.jpg",
+        "release_date": "2022-01-18",
+        "title": "Outsource",
+        "video": false,
+        "vote_average": 2.273,
+        "vote_count": 11,
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/dcnSWFCtk4b2aIzkhq6IDbzoIf1.jpg",
+        "genre_ids": [
+          28,
+          35,
+        ],
+        "id": 942047,
+        "original_language": "en",
+        "original_title": "Outsource",
+        "overview": "A police chief hires an old friend, who is an international spy, to help him search for a wanted suspect in the Philippines. When the chief dies, all evidence points towards the spy, and he must go to extremes to defend himself.",
+        "popularity": 534.58,
+        "poster_path": "/zIAF0UXtCJTJOYNYWiBfyifaaOi.jpg",
+        "release_date": "2022-01-18",
+        "title": "Outsource",
+        "video": false,
+        "vote_average": 2.273,
+        "vote_count": 11,
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  refreshControl={
+    <RefreshControlMock
+      onRefresh={[Function]}
+      refreshing={false}
+    />
+  }
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={0.0001}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "black",
+      "padding": undefined,
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <RCTRefreshControl />
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <FastImage
+          resizeMode="contain"
+          source={
+            {
+              "uri": "https://image.tmdb.org/t/p/w370_and_h556_bestv2//zIAF0UXtCJTJOYNYWiBfyifaaOi.jpg",
+            }
+          }
+          style={
+            {
+              "alignItems": "center",
+              "borderRadius": undefined,
+              "height": undefined,
+              "justifyContent": "flex-end",
+              "marginBottom": undefined,
+              "marginEnd": undefined,
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#ff0000",
+                "justifyContent": "center",
+                "marginBottom": undefined,
+                "marginHorizontal": undefined,
+                "paddingHorizontal": undefined,
+                "paddingVertical": undefined,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "white",
+                }
+              }
+            >
+              Outsource
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "marginBottom": undefined,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "white",
+                  "justifyContent": "center",
+                  "marginEnd": undefined,
+                  "paddingHorizontal": undefined,
+                  "paddingVertical": undefined,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "fontSize": undefined,
+                  }
+                }
+              >
+                2022
+              </Text>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "justifyContent": "center",
+                    "paddingHorizontal": undefined,
+                    "paddingVertical": undefined,
+                    "width": undefined,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                style={
+                  {
+                    "fontSize": undefined,
+                  }
+                }
+              />
+            </View>
+          </View>
+        </FastImage>
+        <FastImage
+          resizeMode="contain"
+          source={
+            {
+              "uri": "https://image.tmdb.org/t/p/w370_and_h556_bestv2//zIAF0UXtCJTJOYNYWiBfyifaaOi.jpg",
+            }
+          }
+          style={
+            {
+              "alignItems": "center",
+              "borderRadius": undefined,
+              "height": undefined,
+              "justifyContent": "flex-end",
+              "marginBottom": undefined,
+              "marginEnd": undefined,
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#ff0000",
+                "justifyContent": "center",
+                "marginBottom": undefined,
+                "marginHorizontal": undefined,
+                "paddingHorizontal": undefined,
+                "paddingVertical": undefined,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "white",
+                }
+              }
+            >
+              Outsource
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "marginBottom": undefined,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "white",
+                  "justifyContent": "center",
+                  "marginEnd": undefined,
+                  "paddingHorizontal": undefined,
+                  "paddingVertical": undefined,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "fontSize": undefined,
+                  }
+                }
+              >
+                2022
+              </Text>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "white",
+                    "justifyContent": "center",
+                    "paddingHorizontal": undefined,
+                    "paddingVertical": undefined,
+                    "width": undefined,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                style={
+                  {
+                    "fontSize": undefined,
+                  }
+                }
+              />
+            </View>
+          </View>
+        </FastImage>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    />
+  </View>
+</RCTScrollView>
+`;

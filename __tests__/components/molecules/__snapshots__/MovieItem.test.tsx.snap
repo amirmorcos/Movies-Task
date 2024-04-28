@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "overflow": "hidden",
+      },
+      {
+        "alignItems": "center",
+        "borderRadius": undefined,
+        "height": undefined,
+        "justifyContent": "flex-end",
+        "marginBottom": undefined,
+        "marginEnd": undefined,
+        "overflow": "hidden",
+        "width": undefined,
+      },
+    ]
+  }
+>
+  <FastImageView
+    defaultSource={null}
+    resizeMode="contain"
+    style={
+      {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#ff0000",
+        "justifyContent": "center",
+        "marginBottom": undefined,
+        "marginHorizontal": undefined,
+        "paddingHorizontal": undefined,
+        "paddingVertical": undefined,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "white",
+        }
+      }
+    >
+      Outsource
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "marginBottom": undefined,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "justifyContent": "center",
+          "marginEnd": undefined,
+          "paddingHorizontal": undefined,
+          "paddingVertical": undefined,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "fontSize": undefined,
+          }
+        }
+      >
+        2022
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "white",
+            "justifyContent": "center",
+            "paddingHorizontal": undefined,
+            "paddingVertical": undefined,
+            "width": undefined,
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          {
+            "fontSize": undefined,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
