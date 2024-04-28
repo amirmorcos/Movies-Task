@@ -2,7 +2,6 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "../../../App";
 import React from "react";
 import renderer from "react-test-renderer";
-import HomePosterList from "organisms/HomePosterList";
 import MoviesList from "organisms/MoviesList";
 
 jest.mock("react-native-vector-icons/FontAwesome6", () => "Icon");

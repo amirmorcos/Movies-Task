@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { moderateScale, vs } from "react-native-size-matters";
+import { Colors } from "themes/Colors";
 
 export default StyleSheet.create({
   imageBg: {
@@ -11,7 +12,7 @@ export default StyleSheet.create({
     alignItems: "center",
   },
   info: {
-    color: "#FFC100",
+    color: Colors.YELLOW,
     fontSize: moderateScale(13),
     fontWeight: "bold",
   },

@@ -1,9 +1,10 @@
 import { StyleSheet } from "react-native";
 import { s, vs } from "react-native-size-matters";
+import { Colors } from "themes/Colors";
 
 export default StyleSheet.create({
   container: {
-    backgroundColor: "black",
+    backgroundColor: Colors.BLACK,
     padding: s(15),
   },
   content: {

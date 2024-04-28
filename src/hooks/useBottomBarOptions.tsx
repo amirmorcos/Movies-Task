@@ -1,6 +1,7 @@
 import { BottomTabNavigationOptions } from "@react-navigation/bottom-tabs";
 import { moderateScale } from "react-native-size-matters";
 import FontAwesomeIcon from "react-native-vector-icons/FontAwesome";
+import { Colors } from "themes/Colors";
 
 export const useBottomBarOptions = () => {
   const getScreenConfig: (
@@ -15,9 +16,9 @@ export const useBottomBarOptions = () => {
     };
   };
   const bottombarStyle: BottomTabNavigationOptions = {
-    tabBarActiveTintColor: "white",
+    tabBarActiveTintColor: Colors.WHITE,
     tabBarStyle: {
-      backgroundColor: "black",
+      backgroundColor: Colors.BLACK,
     },
   };
 
@@ -32,12 +33,12 @@ export const useBottomBarOptions = () => {
   const moviesScreenStyle: BottomTabNavigationOptions = {
     headerTitle: "MOVIES",
     headerTitleStyle: {
-      color: "white",
+      color: Colors.WHITE,
       fontWeight: "bold",
       fontSize: moderateScale(20),
     },
     headerStyle: {
-      backgroundColor: "black",
+      backgroundColor: Colors.BLACK,
       shadowOpacity: 0,
       elevation: 0,
     },
