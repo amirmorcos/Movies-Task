@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { s, vs, moderateScale } from "react-native-size-matters";
+import { Colors } from "themes/Colors";
 
 export default StyleSheet.create({
   image: {
@@ -13,7 +14,7 @@ export default StyleSheet.create({
     alignItems: "center",
   },
   titleContainer: {
-    backgroundColor: "#ff0000",
+    backgroundColor: Colors.RED,
     paddingHorizontal: s(5),
     paddingVertical: vs(2),
     justifyContent: "center",
@@ -26,7 +27,7 @@ export default StyleSheet.create({
     marginBottom: vs(10),
   },
   dateContainer: {
-    backgroundColor: "white",
+    backgroundColor: Colors.WHITE,
     paddingHorizontal: s(5),
     paddingVertical: vs(2),
     marginEnd: s(5),
@@ -34,7 +35,7 @@ export default StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    color: "white",
+    color: Colors.WHITE,
   },
   date: {
     fontSize: moderateScale(10),
