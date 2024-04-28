@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "overflow": "hidden",
+      },
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "height": undefined,
+        "justifyContent": "flex-end",
+        "opacity": 0.8,
+        "width": undefined,
+      },
+    ]
+  }
+>
+  <FastImageView
+    defaultSource={null}
+    resizeMode="stretch"
+    style={
+      {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "marginBottom": undefined,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#FFC100",
+          "fontSize": undefined,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      2022
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#FFC100",
+          "fontSize": undefined,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      •
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#FFC100",
+          "fontSize": undefined,
+          "fontWeight": "bold",
+        }
+      }
+    />
+  </View>
+</View>
+`;

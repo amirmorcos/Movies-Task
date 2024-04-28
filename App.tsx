@@ -10,7 +10,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import BottomNavigation from "navigation/BottomNavigation";
 import React from "react";
 
-const queryClient = new QueryClient();
+export const queryClient = new QueryClient();
 
 function App(): React.JSX.Element {
   return (
