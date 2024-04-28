@@ -14,12 +14,11 @@ const HomePosterList = ({
     <View style={overrideContainerStyle}>
       <Text style={styles.recommendedText}>Recommended</Text>
       <FlatList
+        keyExtractor={(item) => item.id.toString()}
         showsHorizontalScrollIndicator={false}
         horizontal
         data={posters}
-        renderItem={({ item }) => (
-          <HomePoster key={item.id} path={item.poster_path} />
-        )}
+        renderItem={({ item }) => <HomePoster path={item.poster_path} />}
         contentContainerStyle={styles.list}
         ItemSeparatorComponent={() => <Separator />}
       />

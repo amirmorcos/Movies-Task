@@ -5836,7 +5836,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -5942,6 +5942,13 @@ react-native-size-matters@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/react-native-size-matters/-/react-native-size-matters-0.4.2.tgz#4348bdd6fc47383f60326d58ad69870c998a5f9a"
   integrity sha512-DKE3f/sdcozd24oASgkP1iGg+YU3HoajRa5k3a4wkRzpiqREq8SGX12Y5zBgAt/8IivLQoTMYkyQu1/Giuy+zQ==
+
+react-native-super-grid@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-super-grid/-/react-native-super-grid-5.1.0.tgz#2b263232b967045846685ed456619798d7ae7999"
+  integrity sha512-pKzkjdc9pgrAIEJDr5k4HH5i9RSmUZ3mw21QEcZr2ECulg2HYrUV5FAdi8NMOmBeenXY4NNP3zVLckHBd2rBqA==
+  dependencies:
+    prop-types "^15.6.2"
 
 react-native-vector-icons@^10.0.3:
   version "10.0.3"

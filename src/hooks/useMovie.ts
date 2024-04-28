@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import { getGenres } from "api/Genre";
 import { getMoviesList } from "api/Movie";
 import { Urls } from "api/Urls";
@@ -9,9 +9,22 @@ export const useMovie = () => {
     isLoading: moviesLoading,
     error: moviesError,
     refetch: onRefetchMovies,
-  } = useQuery({
+    fetchNextPage,
+    hasNextPage,
+    isFetching: movieFetching,
+    isRefetching: movieRefetching,
+  } = useInfiniteQuery({
     queryKey: ["movies"],
-    queryFn: () => getMoviesList(),
+    queryFn: ({ pageParam }) => getMoviesList(pageParam),
+    getNextPageParam: (lastPage) => {
+      const nextPage =
+        lastPage.page < lastPage.total_pages ? lastPage.page + 1 : 0;
+      return nextPage;
+    },
+    initialPageParam: 1,
+    select: (data) => {
+      return data.pages[0];
+    },
   });
 
   const {
@@ -51,5 +64,10 @@ export const useMovie = () => {
     genresLoading,
     hasError,
     getMovieGenre,
+    fetchNextPage,
+    movieFetching,
+    hasNextPage,
+    movieRefetching,
+    onRefetchMovies,
   };
 };
